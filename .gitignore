@@ -31,6 +31,10 @@ Icon?
 .claude/
 .claude-lint.lock
 .opencode/
+.opencode.json
+.opencode.jsonc
+opencode.json
+opencode.jsonc
 .codex/settings.local.json
 .codex/.cache/
 .codex/tmp/
