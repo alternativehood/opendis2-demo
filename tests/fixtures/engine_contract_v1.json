@@ -1,0 +1,125 @@
+{
+  "animation": {
+    "asset_id": "imgs/test.ff/unitidle",
+    "classification": {
+      "matched_token": "idle",
+      "reason": "animation logical name contains documented role token",
+      "role": "idle"
+    },
+    "container_id": "imgs/test.ff",
+    "facing_direction": "unknown",
+    "frame_count": 3,
+    "frames": [
+      {
+        "fallback_path": null,
+        "image_asset_id": "imgs/test.ff/packed",
+        "index": 0,
+        "logical_name": "Packed",
+        "resolved": true,
+        "source_size": {
+          "height": 9,
+          "width": 8
+        },
+        "texture_region": {
+          "anchor": null,
+          "atlas_asset_id": "imgs/test.ff/__runtime_atlas",
+          "image_asset_id": "imgs/test.ff/packed",
+          "logical_name": "Packed",
+          "pivot": null,
+          "rectangle": {
+            "height": 9,
+            "width": 8,
+            "x": 1,
+            "y": 2
+          },
+          "sheet_index": 0,
+          "sheet_path": "atlases/Imgs/Test.ff/atlas_000.png",
+          "source_size": {
+            "height": 9,
+            "width": 8
+          },
+          "trim_offset": null,
+          "trimmed_size": null
+        },
+        "timing": {
+          "duration_ms": 75,
+          "source": "provisional_sidecar"
+        }
+      },
+      {
+        "fallback_path": "animations/Imgs/Test.ff/UNITIDLE/frame_001.png",
+        "image_asset_id": "imgs/test.ff/fallback",
+        "index": 1,
+        "logical_name": "Fallback",
+        "resolved": true,
+        "source_size": {
+          "height": 11,
+          "width": 10
+        },
+        "texture_region": null,
+        "timing": {
+          "duration_ms": 75,
+          "source": "provisional_sidecar"
+        }
+      },
+      {
+        "fallback_path": null,
+        "image_asset_id": null,
+        "index": 2,
+        "logical_name": "Missing",
+        "resolved": false,
+        "source_size": {
+          "height": 13,
+          "width": 12
+        },
+        "texture_region": null,
+        "timing": {
+          "duration_ms": 75,
+          "source": "provisional_sidecar"
+        }
+      }
+    ],
+    "logical_name": "UNITIDLE",
+    "loop_mode": "unknown",
+    "sidecar_path": "animations/Imgs/Test.ff/UNITIDLE/anim.json",
+    "warnings": [
+      {
+        "animation_asset_id": "imgs/test.ff/unitidle",
+        "frame_index": 2,
+        "logical_name": "Missing",
+        "matching_asset_ids": [],
+        "message": "animation frame does not resolve to an image in its container"
+      },
+      {
+        "animation_asset_id": "imgs/test.ff/unitidle",
+        "frame_index": 2,
+        "logical_name": "Missing",
+        "matching_asset_ids": [],
+        "message": "animation frame has no atlas region or fallback PNG"
+      }
+    ]
+  },
+  "inspection_schema_version": 1,
+  "request": {
+    "animation_asset_id": "imgs/test.ff/unitidle",
+    "data_table_asset_id": null,
+    "row_key": null,
+    "sound_asset_id": "sfx/test.wdb/hit"
+  },
+  "sound": {
+    "asset_id": "sfx/test.wdb/hit",
+    "bit_depth": null,
+    "channels": 1,
+    "container_id": "sfx/test.wdb",
+    "duration_ms": null,
+    "format": "wave",
+    "format_tag": 85,
+    "logical_name": "Hit",
+    "payload_path": "sounds/Sfx/Test.wdb/Hit.wav",
+    "payload_size": 5,
+    "sample_rate": 44100,
+    "sidecar_path": "sounds/Sfx/Test.wdb/Hit.json",
+    "warnings": []
+  },
+  "status": "ok"
+}

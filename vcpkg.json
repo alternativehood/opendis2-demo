@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg/master/scripts/vcpkg.schema.json",
+  "name": "opendis2",
+  "version": "1.0.0",
+  "dependencies": [
+    "cli11",
+    "nlohmann-json",
+    "lodepng",
+    "json-schema-validator",
+    "gtest",
+    "spdlog",
+    "stb",
+    "magic-enum",
+    "bzip2",
+    "brotli",
+    {
+      "name": "imgui",
+      "features": ["sdl3-binding", "sdl3-renderer-binding"]
+    },
+    {
+      "name": "sdl3",
+      "version>=": "3.4.0"
+    },
+    {
+      "name": "sdl3-shadercross",
+      "host": true,
+      "platform": "windows | (linux & x64)"
+    },
+    "sdl3-ttf",
+    {
+      "name": "sdl3-image",
+      "features": ["png"]
+    },
+    {
+      "name": "sdl3-mixer",
+      "features": ["mpg123"]
+    }
+  ],
+  "builtin-baseline": "301856f5f2824f788a3ffa6332293861cccd23b4",
+  "overrides": [
+    { "name": "cli11", "version": "2.4.2" },
+    { "name": "nlohmann-json", "version": "3.11.3" },
+    { "name": "gtest", "version": "1.14.0" },
+    { "name": "spdlog", "version": "1.17.0" },
+    { "name": "magic-enum", "version": "0.9.8" }
+  ]
+}

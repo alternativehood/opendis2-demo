@@ -1,0 +1,23 @@
+if(NOT DEFINED INPUT OR NOT DEFINED OUTPUT OR NOT DEFINED SYMBOL)
+    message(FATAL_ERROR "INPUT, OUTPUT, and SYMBOL are required")
+endif()
+
+string(REPLACE "\"" "" INPUT "${INPUT}")
+string(REPLACE "\"" "" OUTPUT "${OUTPUT}")
+string(REPLACE "\"" "" SYMBOL "${SYMBOL}")
+
+file(READ "${INPUT}" shader_hex HEX)
+string(REGEX MATCHALL ".." shader_bytes "${shader_hex}")
+list(LENGTH shader_bytes shader_size)
+
+file(WRITE "${OUTPUT}" "#pragma once\n\n#include <array>\n#include <cstdint>\n\nnamespace d2engine::fsr_shader_binaries {\ninline constexpr std::array<std::uint8_t, ${shader_size}> ${SYMBOL} = {")
+set(shader_column 0)
+foreach(shader_byte IN LISTS shader_bytes)
+    file(APPEND "${OUTPUT}" "0x${shader_byte},")
+    math(EXPR shader_column "${shader_column} + 1")
+    math(EXPR shader_line_break "${shader_column} % 12")
+    if(shader_line_break EQUAL 0)
+        file(APPEND "${OUTPUT}" "\n")
+    endif()
+endforeach()
+file(APPEND "${OUTPUT}" "\n};\n} // namespace d2engine::fsr_shader_binaries\n")

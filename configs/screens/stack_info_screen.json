@@ -1,0 +1,175 @@
+{
+    "render_tree": {
+        "/stack_info": {
+            "kind": "popup_root",
+            "x": 308,
+            "y": 126,
+            "w": 800,
+            "h": 600,
+            "level": 100
+        },
+        "/stack_info/background": {
+            "kind": "image",
+            "x": 0,
+            "y": 0,
+            "w": 800,
+            "h": 600,
+            "level": 0
+        },
+        "/stack_info/leader/portrait": {
+            "kind": "image",
+            "x": 115,
+            "y": 38,
+            "w": 330,
+            "h": 430,
+            "level": 1
+        },
+        "/stack_info/leader/name": {
+            "kind": "text",
+            "x": 141,
+            "y": 456,
+            "w": 275,
+            "h": 28,
+            "level": 3,
+            "color": { "r": 0, "g": 0, "b": 0, "a": 255 },
+            "font_size": 12
+        },
+        "/stack_info/leader/race": {
+            "kind": "text",
+            "x": 161,
+            "y": 483,
+            "w": 235,
+            "h": 20,
+            "level": 3,
+            "color": { "r": 0, "g": 0, "b": 0, "a": 255 },
+            "font_size": 12
+        },
+        "/stack_info/leader/battles_won": {
+            "kind": "text",
+            "x": 161,
+            "y": 504,
+            "w": 235,
+            "h": 22,
+            "level": 3,
+            "color": { "r": 0, "g": 0, "b": 0, "a": 255 },
+            "font_size": 12
+        },
+        "/stack_info/formation/slot_0": {
+            "kind": "slot", "x": 557, "y": 99, "w": 84, "h": 99, "level": 2
+        },
+        "/stack_info/formation/slot_0/frame": {
+            "kind": "image", "x": 0, "y": 0, "w": 84, "h": 99, "level": 1
+        },
+        "/stack_info/formation/slot_0/portrait": {
+            "kind": "image", "x": 7, "y": 7, "w": 70, "h": 85, "level": 2
+        },
+        "/stack_info/formation/slot_0/name": {
+            "kind": "text", "x": -15, "y": 99, "w": 114, "h": 33, "level": 3,
+            "color": { "r": 0, "g": 0, "b": 0, "a": 255 }, "font_size": 10
+        },
+        "/stack_info/formation/slot_1": {
+            "kind": "slot", "x": 446, "y": 98, "w": 84, "h": 99, "level": 2
+        },
+        "/stack_info/formation/slot_1/frame": {
+            "kind": "image", "x": 0, "y": 0, "w": 84, "h": 99, "level": 1
+        },
+        "/stack_info/formation/slot_1/portrait": {
+            "kind": "image", "x": 7, "y": 7, "w": 70, "h": 85, "level": 2
+        },
+        "/stack_info/formation/slot_1/name": {
+            "kind": "text", "x": -15, "y": 99, "w": 114, "h": 33, "level": 3,
+            "color": { "r": 0, "g": 0, "b": 0, "a": 255 }, "font_size": 10
+        },
+        "/stack_info/formation/slot_2": {
+            "kind": "slot", "x": 557, "y": 243, "w": 84, "h": 99, "level": 2
+        },
+        "/stack_info/formation/slot_2/frame": {
+            "kind": "image", "x": 0, "y": 0, "w": 84, "h": 99, "level": 1
+        },
+        "/stack_info/formation/slot_2/portrait": {
+            "kind": "image", "x": 7, "y": 7, "w": 70, "h": 85, "level": 2
+        },
+        "/stack_info/formation/slot_2/name": {
+            "kind": "text", "x": -15, "y": 99, "w": 114, "h": 33, "level": 3,
+            "color": { "r": 0, "g": 0, "b": 0, "a": 255 }, "font_size": 10
+        },
+        "/stack_info/formation/slot_3": {
+            "kind": "slot", "x": 446, "y": 243, "w": 84, "h": 99, "level": 2
+        },
+        "/stack_info/formation/slot_3/frame": {
+            "kind": "image", "x": 0, "y": 0, "w": 84, "h": 99, "level": 1
+        },
+        "/stack_info/formation/slot_3/portrait": {
+            "kind": "image", "x": 7, "y": 7, "w": 70, "h": 85, "level": 2
+        },
+        "/stack_info/formation/slot_3/name": {
+            "kind": "text", "x": -15, "y": 99, "w": 114, "h": 33, "level": 3,
+            "color": { "r": 0, "g": 0, "b": 0, "a": 255 }, "font_size": 10
+        },
+        "/stack_info/formation/slot_4": {
+            "kind": "slot", "x": 557, "y": 388, "w": 84, "h": 99, "level": 2
+        },
+        "/stack_info/formation/slot_4/frame": {
+            "kind": "image", "x": 0, "y": 0, "w": 84, "h": 99, "level": 1
+        },
+        "/stack_info/formation/slot_4/portrait": {
+            "kind": "image", "x": 7, "y": 7, "w": 70, "h": 85, "level": 2
+        },
+        "/stack_info/formation/slot_4/name": {
+            "kind": "text", "x": -15, "y": 99, "w": 114, "h": 33, "level": 3,
+            "color": { "r": 0, "g": 0, "b": 0, "a": 255 }, "font_size": 10
+        },
+        "/stack_info/formation/slot_5": {
+            "kind": "slot", "x": 446, "y": 387, "w": 84, "h": 99, "level": 2
+        },
+        "/stack_info/formation/slot_5/frame": {
+            "kind": "image", "x": 0, "y": 0, "w": 84, "h": 99, "level": 1
+        },
+        "/stack_info/formation/slot_5/portrait": {
+            "kind": "image", "x": 7, "y": 7, "w": 70, "h": 85, "level": 2
+        },
+        "/stack_info/formation/slot_5/name": {
+            "kind": "text", "x": -15, "y": 99, "w": 114, "h": 33, "level": 3,
+            "color": { "r": 0, "g": 0, "b": 0, "a": 255 }, "font_size": 10
+        },
+        "/stack_info/formation/large_row_0": {
+            "kind": "slot", "x": 461, "y": 98, "w": 164, "h": 99, "level": 2
+        },
+        "/stack_info/formation/large_row_0/frame": {
+            "kind": "image", "x": 0, "y": 0, "w": 164, "h": 99, "level": 1
+        },
+        "/stack_info/formation/large_row_0/portrait": {
+            "kind": "image", "x": 7, "y": 7, "w": 150, "h": 85, "level": 2
+        },
+        "/stack_info/formation/large_row_0/name": {
+            "kind": "text", "x": 0, "y": 99, "w": 164, "h": 33, "level": 3,
+            "color": { "r": 0, "g": 0, "b": 0, "a": 255 }, "font_size": 10
+        },
+        "/stack_info/formation/large_row_1": {
+            "kind": "slot", "x": 461, "y": 243, "w": 164, "h": 99, "level": 2
+        },
+        "/stack_info/formation/large_row_1/frame": {
+            "kind": "image", "x": 0, "y": 0, "w": 164, "h": 99, "level": 1
+        },
+        "/stack_info/formation/large_row_1/portrait": {
+            "kind": "image", "x": 7, "y": 7, "w": 150, "h": 85, "level": 2
+        },
+        "/stack_info/formation/large_row_1/name": {
+            "kind": "text", "x": 0, "y": 99, "w": 164, "h": 33, "level": 3,
+            "color": { "r": 0, "g": 0, "b": 0, "a": 255 }, "font_size": 10
+        },
+        "/stack_info/formation/large_row_2": {
+            "kind": "slot", "x": 461, "y": 387, "w": 164, "h": 99, "level": 2
+        },
+        "/stack_info/formation/large_row_2/frame": {
+            "kind": "image", "x": 0, "y": 0, "w": 164, "h": 99, "level": 1
+        },
+        "/stack_info/formation/large_row_2/portrait": {
+            "kind": "image", "x": 7, "y": 7, "w": 150, "h": 85, "level": 2
+        },
+        "/stack_info/formation/large_row_2/name": {
+            "kind": "text", "x": 0, "y": 99, "w": 164, "h": 33, "level": 3,
+            "color": { "r": 0, "g": 0, "b": 0, "a": 255 }, "font_size": 10
+        }
+    }
+}

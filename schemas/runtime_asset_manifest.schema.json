@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RuntimeAssetManifest",
+  "description": "Schema for game_manifest.json — structural validation. Semantic checks (path exists, asset ID uniqueness) stay in C++.",
+  "type": "object",
+  "properties": {
+    "asset_schema_version": {
+      "type": "integer",
+      "description": "Schema version number"
+    },
+    "containers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "container_id": { "type": "string", "minLength": 1 },
+          "path": { "type": "string", "minLength": 1 },
+          "content_kinds": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 0
+          }
+        },
+        "required": ["container_id", "path", "content_kinds"],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "asset_id": { "type": "string", "minLength": 1 },
+          "logical_name": { "type": "string", "minLength": 1 },
+          "type": { "type": "string", "minLength": 1 },
+          "container_id": { "type": "string", "minLength": 1 },
+          "path": { "type": "string", "minLength": 1 }
+        },
+        "required": ["asset_id", "logical_name", "type", "container_id", "path"],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "game_root": { "type": "string" }
+  },
+  "required": ["asset_schema_version", "containers", "assets", "warnings"],
+  "additionalProperties": false
+}

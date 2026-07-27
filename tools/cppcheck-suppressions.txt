@@ -1,0 +1,10 @@
+# cppcheck false positives on GoogleTest TEST()/TEST_F()/TEST_P() macro expansion
+# when analyzing test translation units through --project=compile_commands.json.
+# Real test syntax is still checked by the compiler and clangd-tidy.
+syntaxError:*/tests/unit/test_*.cpp
+syntaxError:*/tests/integration/test_*.cpp
+
+unusedFunction:*/tests/unit/test_sg_parser.hpp
+
+# Cross-library false positives: defined in libd2engine, called from opendis2
+unusedFunction:*/d2engine/assets/render_graph_asset_collector.cpp

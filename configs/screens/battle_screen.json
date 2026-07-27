@@ -1,0 +1,1558 @@
+{
+  "battle_effect_default_profiles": {
+    "source_attack_overlay": {
+      "a": {
+        "level": 0,
+        "scale_x": 1,
+        "scale_y": 1,
+        "x": 93,
+        "y": 3
+      },
+      "d": {
+        "level": 0,
+        "scale_x": 1,
+        "scale_y": 1,
+        "x": 0,
+        "y": 0
+      }
+    },
+    "target_damage": {
+      "a": {
+        "level": 0,
+        "scale_x": 1,
+        "scale_y": 1,
+        "x": -15,
+        "y": 35
+      },
+      "d": {
+        "level": 0,
+        "scale_x": 1,
+        "scale_y": 1,
+        "x": -15,
+        "y": 35
+      }
+    },
+    "team_attack": {
+      "a": {
+        "level": 4,
+        "scale_x": 1,
+        "scale_y": 1,
+        "x": 0,
+        "y": 0
+      },
+      "d": {
+        "level": 4,
+        "scale_x": 1,
+        "scale_y": 1,
+        "x": -15,
+        "y": 35
+      }
+    }
+  },
+  "battle_effect_profiles": {
+    "G000UU0103HEFFA1A00": {
+      "source": {
+        "alpha": 1,
+        "frame_delay": 14,
+        "level": 0,
+        "scale_x": 1,
+        "scale_y": 1,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "debug_overlay_style": {
+    "center_dot_radius": 6,
+    "colors": {
+      "attacker_back": {
+        "a": 255,
+        "b": 0,
+        "g": 210,
+        "r": 0
+      },
+      "attacker_front": {
+        "a": 255,
+        "b": 0,
+        "g": 255,
+        "r": 100
+      },
+      "center": {
+        "a": 220,
+        "b": 255,
+        "g": 100,
+        "r": 180
+      },
+      "defender_back": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 220
+      },
+      "defender_front": {
+        "a": 255,
+        "b": 0,
+        "g": 140,
+        "r": 255
+      },
+      "depth_line": {
+        "a": 140,
+        "b": 80,
+        "g": 255,
+        "r": 255
+      },
+      "lane_line": {
+        "a": 160,
+        "b": 255,
+        "g": 200,
+        "r": 200
+      },
+      "mount": {
+        "a": 220,
+        "b": 0,
+        "g": 200,
+        "r": 255
+      }
+    },
+    "label_offset": {
+      "x": 2,
+      "y": -4
+    },
+    "mount_marker_radius": 4,
+    "slot_dot_radius": 8
+  },
+  "font": {
+    "face": "Charis SIL"
+  },
+  "layout_metrics": {
+    "battlefield_reference_rect": {
+      "h": 615,
+      "w": 990,
+      "x": 305,
+      "y": 120
+    },
+    "reference_size": {
+      "h": 945,
+      "w": 1600
+    },
+    "slot_hitbox": {
+      "h": 190,
+      "w": 200
+    }
+  },
+  "render_tree": {
+    "/background": {
+      "alpha": 1,
+      "h": 945,
+      "kind": "background_container",
+      "level": -8,
+      "w": 1600,
+      "x": 0,
+      "y": 0
+    },
+    "/background/battle": {
+      "alpha": 1,
+      "h": 946,
+      "kind": "background_battle",
+      "level": 0,
+      "w": 1877,
+      "x": -248,
+      "y": 0
+    },
+    "/background/ground": {
+      "alpha": 1,
+      "h": 945,
+      "kind": "background_ground",
+      "level": 0,
+      "w": 1600,
+      "x": 0,
+      "y": 0
+    },
+    "/battlefield": {
+      "alpha": 1,
+      "h": 945,
+      "kind": "battlefield",
+      "level": 0,
+      "w": 1600,
+      "x": 0,
+      "y": 0
+    },
+    "/battlefield/slot_a_back_0": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 785,
+      "y": 312
+    },
+    "/battlefield/slot_a_back_0/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 0,
+      "y": 0
+    },
+    "/battlefield/slot_a_back_1": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 578,
+      "y": 380
+    },
+    "/battlefield/slot_a_back_1/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 0,
+      "y": 0
+    },
+    "/battlefield/slot_a_back_2": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 372,
+      "y": 448
+    },
+    "/battlefield/slot_a_back_2/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 0,
+      "y": 0
+    },
+    "/battlefield/slot_a_center_0": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 862,
+      "y": 361
+    },
+    "/battlefield/slot_a_center_0/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 39,
+      "y": 74
+    },
+    "/battlefield/slot_a_center_1": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 655,
+      "y": 429
+    },
+    "/battlefield/slot_a_center_1/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 38,
+      "y": 73
+    },
+    "/battlefield/slot_a_center_2": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 449,
+      "y": 497
+    },
+    "/battlefield/slot_a_center_2/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 37,
+      "y": 74
+    },
+    "/battlefield/slot_a_front_0": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 939,
+      "y": 411
+    },
+    "/battlefield/slot_a_front_0/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 0,
+      "y": 0
+    },
+    "/battlefield/slot_a_front_1": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 732,
+      "y": 479
+    },
+    "/battlefield/slot_a_front_1/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 0,
+      "y": 0
+    },
+    "/battlefield/slot_a_front_2": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 526,
+      "y": 547
+    },
+    "/battlefield/slot_a_front_2/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 0,
+      "y": 0
+    },
+    "/battlefield/slot_d_back_0": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 1254,
+      "y": 610
+    },
+    "/battlefield/slot_d_back_0/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 0,
+      "y": 0
+    },
+    "/battlefield/slot_d_back_1": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 1031,
+      "y": 683
+    },
+    "/battlefield/slot_d_back_1/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 0,
+      "y": 0
+    },
+    "/battlefield/slot_d_back_2": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 808,
+      "y": 758
+    },
+    "/battlefield/slot_d_back_2/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 0,
+      "y": 0
+    },
+    "/battlefield/slot_d_center_0": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 1177,
+      "y": 560
+    },
+    "/battlefield/slot_d_center_0/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 4,
+      "y": 40
+    },
+    "/battlefield/slot_d_center_1": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 954,
+      "y": 634
+    },
+    "/battlefield/slot_d_center_1/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 4,
+      "y": 41
+    },
+    "/battlefield/slot_d_center_2": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 731,
+      "y": 708
+    },
+    "/battlefield/slot_d_center_2/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 4,
+      "y": 41
+    },
+    "/battlefield/slot_d_front_0": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 1100,
+      "y": 511
+    },
+    "/battlefield/slot_d_front_0/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 0,
+      "y": 0
+    },
+    "/battlefield/slot_d_front_1": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 877,
+      "y": 585
+    },
+    "/battlefield/slot_d_front_1/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 0,
+      "y": 0
+    },
+    "/battlefield/slot_d_front_2": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "battlefield_slot",
+      "level": 10,
+      "w": 0,
+      "x": 654,
+      "y": 659
+    },
+    "/battlefield/slot_d_front_2/unit": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "unit_mount",
+      "level": 0,
+      "w": 0,
+      "x": 0,
+      "y": 0
+    },
+    "/debug": {
+      "alpha": 1,
+      "h": 945,
+      "kind": "debug",
+      "level": 0,
+      "w": 1600,
+      "x": 0,
+      "y": 0
+    },
+    "/debug/inspected_item": {
+      "alpha": 1,
+      "h": 0,
+      "kind": "debug_inspected",
+      "level": 99,
+      "w": 0,
+      "x": 0,
+      "y": 0
+    },
+    "/ui": {
+      "alpha": 1,
+      "h": 945,
+      "kind": "root",
+      "level": 0,
+      "w": 1600,
+      "x": 0,
+      "y": 0
+    },
+    "/ui/combat_frame": {
+      "alpha": 1,
+      "asset": "DLG_BATTLE_A_MAINCOMBATBG",
+      "h": 315,
+      "kind": "image",
+      "level": 2,
+      "w": 1602,
+      "x": -1,
+      "y": 630
+    },
+    "/ui/combat_frame/info_left": {
+      "alpha": 1,
+      "h": 64,
+      "kind": "info",
+      "level": 2,
+      "w": 260,
+      "x": 343,
+      "y": 184
+    },
+    "/ui/combat_frame/info_left/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 20,
+      "kind": "text",
+      "level": 0,
+      "w": 260,
+      "x": 0,
+      "y": 40
+    },
+    "/ui/combat_frame/info_left/name": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 20,
+      "kind": "text",
+      "level": 0,
+      "w": 260,
+      "x": 0,
+      "y": 14
+    },
+    "/ui/combat_frame/info_right": {
+      "alpha": 1,
+      "h": 64,
+      "kind": "info",
+      "level": 2,
+      "w": 260,
+      "x": 1005,
+      "y": 184
+    },
+    "/ui/combat_frame/info_right/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 20,
+      "kind": "text",
+      "level": 0,
+      "w": 260,
+      "x": 0,
+      "y": 40
+    },
+    "/ui/combat_frame/info_right/name": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 20,
+      "kind": "text",
+      "level": 0,
+      "w": 260,
+      "x": 0,
+      "y": 14
+    },
+    "/ui/combat_frame/left_slot": {
+      "alpha": 1,
+      "h": 240,
+      "kind": "slot",
+      "level": 1,
+      "w": 271,
+      "x": -2,
+      "y": 74
+    },
+    "/ui/combat_frame/left_slot/portrait": {
+      "alpha": 1,
+      "h": 231,
+      "kind": "portrait",
+      "level": 0,
+      "w": 266,
+      "x": 2,
+      "y": 2
+    },
+    "/ui/combat_frame/right_slot": {
+      "alpha": 1,
+      "h": 240,
+      "kind": "slot",
+      "level": 1,
+      "w": 271,
+      "x": 1326,
+      "y": 74
+    },
+    "/ui/combat_frame/right_slot/portrait": {
+      "alpha": 1,
+      "h": 235,
+      "kind": "portrait",
+      "level": 0,
+      "w": 271,
+      "x": 10,
+      "y": 0
+    },
+    "/ui/left_unit_group": {
+      "alpha": 1,
+      "asset": "DLG_BATTLE_A_LUNITGROUP",
+      "h": 705,
+      "kind": "image",
+      "level": 7,
+      "w": 277,
+      "x": 0,
+      "y": 25
+    },
+    "/ui/left_unit_group/0_back": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 9,
+      "y": 116
+    },
+    "/ui/left_unit_group/0_back/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/left_unit_group/0_back/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 0
+    },
+    "/ui/left_unit_group/0_center": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 75,
+      "y": 116
+    },
+    "/ui/left_unit_group/0_center/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/left_unit_group/0_center/hp_background": {
+      "alpha": 1,
+      "asset": "DLG_BATTLE_A_SPLITLRG",
+      "h": 32,
+      "kind": "image",
+      "level": -1,
+      "w": 47,
+      "x": 32,
+      "y": 135
+    },
+    "/ui/left_unit_group/0_center/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 0
+    },
+    "/ui/left_unit_group/0_front": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 140,
+      "y": 117
+    },
+    "/ui/left_unit_group/0_front/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/left_unit_group/0_front/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": -1
+    },
+    "/ui/left_unit_group/1_back": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 9,
+      "y": 283
+    },
+    "/ui/left_unit_group/1_back/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/left_unit_group/1_back/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": -1
+    },
+    "/ui/left_unit_group/1_center": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 75,
+      "y": 282
+    },
+    "/ui/left_unit_group/1_center/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/left_unit_group/1_center/hp_background": {
+      "alpha": 1,
+      "asset": "DLG_BATTLE_A_SPLITLRG",
+      "h": 32,
+      "kind": "image",
+      "level": -1,
+      "w": 47,
+      "x": 32,
+      "y": 135
+    },
+    "/ui/left_unit_group/1_center/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 0
+    },
+    "/ui/left_unit_group/1_front": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 140,
+      "y": 283
+    },
+    "/ui/left_unit_group/1_front/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/left_unit_group/1_front/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": -1
+    },
+    "/ui/left_unit_group/2_back": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 9,
+      "y": 450
+    },
+    "/ui/left_unit_group/2_back/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/left_unit_group/2_back/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": -1
+    },
+    "/ui/left_unit_group/2_center": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 75,
+      "y": 449
+    },
+    "/ui/left_unit_group/2_center/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/left_unit_group/2_center/hp_background": {
+      "alpha": 1,
+      "asset": "DLG_BATTLE_A_SPLITLRG",
+      "h": 32,
+      "kind": "image",
+      "level": -1,
+      "w": 47,
+      "x": 32,
+      "y": 135
+    },
+    "/ui/left_unit_group/2_center/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 0
+    },
+    "/ui/left_unit_group/2_front": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 140,
+      "y": 450
+    },
+    "/ui/left_unit_group/2_front/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/left_unit_group/2_front/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": -1
+    },
+    "/ui/right_unit_group": {
+      "alpha": 1,
+      "asset": "DLG_BATTLE_A_RUNITGROUP",
+      "h": 705,
+      "kind": "image",
+      "level": 0,
+      "w": 277,
+      "x": 1323,
+      "y": 25
+    },
+    "/ui/right_unit_group/0_back": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 156,
+      "y": 117
+    },
+    "/ui/right_unit_group/0_back/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/right_unit_group/0_back/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": -1
+    },
+    "/ui/right_unit_group/0_center": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 1,
+      "w": 113,
+      "x": 91,
+      "y": 116
+    },
+    "/ui/right_unit_group/0_center/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/right_unit_group/0_center/hp_background": {
+      "alpha": 1,
+      "asset": "DLG_BATTLE_A_SPLITLRG",
+      "h": 32,
+      "kind": "image",
+      "level": -1,
+      "w": 47,
+      "x": 32,
+      "y": 135
+    },
+    "/ui/right_unit_group/0_center/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 0
+    },
+    "/ui/right_unit_group/0_front": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 1,
+      "w": 113,
+      "x": 25,
+      "y": 117
+    },
+    "/ui/right_unit_group/0_front/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/right_unit_group/0_front/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": -1
+    },
+    "/ui/right_unit_group/1_back": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 156,
+      "y": 283
+    },
+    "/ui/right_unit_group/1_back/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/right_unit_group/1_back/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": -1
+    },
+    "/ui/right_unit_group/1_center": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 91,
+      "y": 282
+    },
+    "/ui/right_unit_group/1_center/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/right_unit_group/1_center/hp_background": {
+      "alpha": 1,
+      "asset": "DLG_BATTLE_A_SPLITLRG",
+      "h": 32,
+      "kind": "image",
+      "level": -1,
+      "w": 47,
+      "x": 32,
+      "y": 135
+    },
+    "/ui/right_unit_group/1_center/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 0
+    },
+    "/ui/right_unit_group/1_front": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 25,
+      "y": 283
+    },
+    "/ui/right_unit_group/1_front/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/right_unit_group/1_front/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": -1
+    },
+    "/ui/right_unit_group/2_back": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 156,
+      "y": 450
+    },
+    "/ui/right_unit_group/2_back/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/right_unit_group/2_back/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": -1
+    },
+    "/ui/right_unit_group/2_center": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 91,
+      "y": 449
+    },
+    "/ui/right_unit_group/2_center/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/right_unit_group/2_center/hp_background": {
+      "alpha": 1,
+      "asset": "DLG_BATTLE_A_SPLITLRG",
+      "h": 32,
+      "kind": "image",
+      "level": -1,
+      "w": 47,
+      "x": 32,
+      "y": 135
+    },
+    "/ui/right_unit_group/2_center/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 0
+    },
+    "/ui/right_unit_group/2_front": {
+      "alpha": 1,
+      "h": 160,
+      "kind": "slot",
+      "level": 0,
+      "w": 113,
+      "x": 25,
+      "y": 450
+    },
+    "/ui/right_unit_group/2_front/hp": {
+      "alpha": 1,
+      "color": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "font_size": 12,
+      "h": 25,
+      "kind": "text",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": 135
+    },
+    "/ui/right_unit_group/2_front/portrait": {
+      "alpha": 1,
+      "h": 135,
+      "kind": "portrait",
+      "level": 0,
+      "w": 113,
+      "x": 0,
+      "y": -1
+    }
+  },
+  "scene_layout": {
+    "background": {
+      "alpha": 1,
+      "frame_delay": 0,
+      "level": -8,
+      "scale_x": 1,
+      "scale_y": 1,
+      "x": 0,
+      "y": 0
+    },
+    "corpse": {
+      "alpha": 1,
+      "frame_delay": 0,
+      "level": 0,
+      "scale_x": 1,
+      "scale_y": 1,
+      "x": 0,
+      "y": 0
+    },
+    "global": {
+      "alpha": 1,
+      "frame_delay": 0,
+      "level": 0,
+      "scale_x": 1,
+      "scale_y": 1,
+      "x": -15,
+      "y": 35
+    },
+    "unit": {
+      "alpha": 1,
+      "frame_delay": 0,
+      "level": 0,
+      "scale_x": 0.88,
+      "scale_y": 1.11,
+      "x": 0,
+      "y": 0
+    }
+  },
+  "sprite_profiles": {
+    "DEAD_HUMAN_LA": {
+      "alpha": 1,
+      "frame_delay": 0,
+      "level": 0,
+      "scale_x": 2,
+      "scale_y": 2,
+      "x": 0,
+      "y": 0
+    },
+    "DEAD_HUMAN_SA": {
+      "alpha": 1,
+      "frame_delay": 0,
+      "level": 0,
+      "scale_x": 1.5,
+      "scale_y": 1.5,
+      "x": 0,
+      "y": 0
+    },
+    "MRKCURLARGEA": {
+      "alpha": 1,
+      "frame_delay": 0,
+      "level": 0,
+      "scale_x": 2,
+      "scale_y": 2,
+      "x": 0,
+      "y": 0
+    },
+    "MRKCURSMALLA": {
+      "alpha": 1,
+      "frame_delay": 0,
+      "level": 0,
+      "scale_x": 1,
+      "scale_y": 1,
+      "x": 0,
+      "y": 0
+    }
+  },
+  "unit_attack_visual_intents": {
+    "UU0103": {
+      "source_attack_overlay": {
+        "direction": "side_preferred",
+        "family": "HEFF"
+      },
+      "target_damage_fx": {
+        "direction": "B",
+        "family": "TUCH"
+      },
+      "team_attack_overlay": {
+        "direction_by_side": {
+          "a": "D"
+        },
+        "family": "HEFF"
+      }
+    }
+  },
+  "unit_visual_layer_default_profiles": {
+    "attack": {
+      "a2": {
+        "a": {
+          "alpha": 1,
+          "frame_delay": 0,
+          "level": 0,
+          "scale_x": 1,
+          "scale_y": 1,
+          "x": -10,
+          "y": -155
+        },
+        "d": {
+          "alpha": 1,
+          "frame_delay": 0,
+          "level": 0,
+          "scale_x": 1,
+          "scale_y": 1,
+          "x": 5,
+          "y": -218
+        }
+      },
+      "s1": {
+        "alpha": 0.5,
+        "frame_delay": 0,
+        "level": 0,
+        "scale_x": 1,
+        "scale_y": 1,
+        "x": 0,
+        "y": 0
+      }
+    },
+    "hit": {
+      "a2": {
+        "a": {
+          "alpha": 1,
+          "frame_delay": 0,
+          "level": 0,
+          "scale_x": 1,
+          "scale_y": 1,
+          "x": -11,
+          "y": -155
+        },
+        "d": {
+          "alpha": 1,
+          "frame_delay": 0,
+          "level": 0,
+          "scale_x": 1,
+          "scale_y": 1,
+          "x": 7,
+          "y": -145
+        }
+      },
+      "s1": {
+        "alpha": 0.5,
+        "frame_delay": 0,
+        "level": 0,
+        "scale_x": 1,
+        "scale_y": 1,
+        "x": 0,
+        "y": 0
+      }
+    },
+    "idle": {
+      "a2": {
+        "a": {
+          "alpha": 1,
+          "frame_delay": 0,
+          "level": 0,
+          "scale_x": 1,
+          "scale_y": 1,
+          "x": -10,
+          "y": -154
+        },
+        "d": {
+          "alpha": 1,
+          "frame_delay": 0,
+          "level": 0,
+          "scale_x": 1,
+          "scale_y": 1,
+          "x": 7,
+          "y": -146
+        }
+      },
+      "s1": {
+        "alpha": 0.5,
+        "frame_delay": 0,
+        "level": 0,
+        "scale_x": 1,
+        "scale_y": 1,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "unit_visual_layer_profiles": {
+    "UU6121": {
+      "attack": {
+        "a2": {
+          "a": {
+            "alpha": 1,
+            "frame_delay": 0,
+            "level": 0,
+            "scale_x": 1,
+            "scale_y": 1,
+            "x": -7,
+            "y": 110
+          }
+        }
+      }
+    }
+  }
+}

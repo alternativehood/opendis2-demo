@@ -1,0 +1,325 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# OS junk
+# ──────────────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Editor / IDE
+# ──────────────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.cursor/
+.windsurf/
+*.swp
+*.swo
+*~
+.project
+.cproject
+.settings/
+*.code-workspace
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Local agent / private editor state
+# ──────────────────────────────────────────────────────────────────────────────
+.claude/
+.claude-lint.lock
+.opencode/
+.codex/settings.local.json
+.codex/.cache/
+.codex/tmp/
+.codex/logs/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Local config overrides
+# ──────────────────────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+local.env
+*.local
+*.local.json
+config.local.*
+settings.local.*
+local/
+.local/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Logs
+# ──────────────────────────────────────────────────────────────────────────────
+log.txt
+*.log
+logs/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# CMake build directories
+# ──────────────────────────────────────────────────────────────────────────────
+build/
+/dist/
+cmake-build-*/
+out/
+_build/
+Build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+
+# CMake generated files
+*.cmake.user
+*.cmake.tmp
+install_manifest.txt
+CPackConfig.cmake
+CPackSourceConfig.cmake
+
+# FetchContent / vendored build output
+_deps/
+*/_deps/
+FetchContent_*/
+CMakeDownloadLog.txt
+
+# Ninja / Make / build tool output
+.ninja_deps
+.ninja_log
+build.ninja
+rules.ninja
+Makefile
+!/Makefile
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Compiled objects / libraries / binaries
+# ──────────────────────────────────────────────────────────────────────────────
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.dSYM/
+*.pdb
+*.ilk
+*.idb
+*.exp
+
+# prebuilt / vcpkg_installed
+prebuilt/
+vcpkg_installed/
+
+# Test binaries and temporary test output
+opendis2-dev-tests
+opendis2-dev-integration-tests
+test-results/
+reports/
+coverage/
+*.gcda
+*.gcno
+*.gcov
+lcov.info
+coverage.info
+
+# Dev binary outputs (built executables)
+opendis2-dev-extractor
+opendis2-dev-scenario-gen
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Sanitizers / profiling
+# ──────────────────────────────────────────────────────────────────────────────
+*.profraw
+*.profdata
+asan.log*
+ubsan.log*
+tsan.log*
+msan.log*
+valgrind.log*
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Cache directories (clangd, etc.)
+# ──────────────────────────────────────────────────────────────────────────────
+.cache/
+
+# Lint / static analysis generated reports
+build/reports/
+.cppcheck-cache/
+clang-tidy-fixes.yaml
+*.plist
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Archives / temporary files
+# ──────────────────────────────────────────────────────────────────────────────
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.tmp
+*.temp
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Python helper scripts cache
+# ──────────────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Node tools cache
+# ──────────────────────────────────────────────────────────────────────────────
+node_modules/
+.npm/
+.yarn/
+.pnpm-store/
+jscpd-report/
+.jscpd/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Java tools cache (PMD CPD)
+# ──────────────────────────────────────────────────────────────────────────────
+.pmdCache
+target/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# macOS debug / crash files
+# ──────────────────────────────────────────────────────────────────────────────
+*.crash
+*.ips
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Generated reports / archives
+# ──────────────────────────────────────────────────────────────────────────────
+openspec.zip
+/archive_artifacts/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Original game archives and extracted proprietary assets
+# (both lowercase and uppercase variants for case-insensitive filesystems)
+# ──────────────────────────────────────────────────────────────────────────────
+
+# Game archive containers
+*.ff
+*.FF
+*.smk
+*.SMK
+*.bik
+*.BIK
+*.mqdb
+*.MQDB
+*.opt
+*.OPT
+*.sg
+*.SG
+!testdata/test_map.sg
+*.sav
+*.SAV
+*.mpq
+*.MPQ
+*.mft
+*.MFT
+
+# Database / data files
+*.wdb
+*.WDB
+*.wdt
+*.WDT
+*.dbf
+*.DBF
+*.dat
+*.DAT
+*.dlg
+*.DLG
+
+# Extracted audio
+*.wav
+*.WAV
+*.mp3
+*.MP3
+*.ogg
+*.OGG
+*.flac
+*.FLAC
+
+# Extracted images
+*.png
+*.PNG
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
+*.gif
+*.GIF
+*.webp
+*.WEBP
+*.bmp
+*.BMP
+*.pcx
+*.PCX
+*.tga
+*.TGA
+
+# Extracted / unpacked asset directories
+/extracted/
+/game_assets/
+/original_assets/
+/unpacked/
+/dumps/
+/extracted-data/
+/d2_data_extracted/
+/d2_data_extacted/
+/output/
+/dump/
+/assets-out/
+/resources-out/
+/export/
+/exports/
+data/original/
+data/extracted/
+
+# Allow specific synthetic/explanatory images in docs
+!docs/formats/*.png
+!docs/formats/*.jpg
+!docs/formats/*.gif
+!tests/fixtures/synthetic/
+
+# Allow application-level icon assets (tracked in git, not extracted from game)
+!assets/app/icon.png
+
+# Generated scenario output and analysis artifacts
+/artifacts/
+/battle_scenarios/
+
+# Accidental symlinks
+Downloads
+
+# Keep local game installation directories out
+DISCIPLES2/
+Disciples2/
+Disciples II/
+Disciples II Rise of the Elves/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Research — local analysis notes, generated dumps, extracted reference files
+# Research findings that are ready for publication go in docs/research/.
+# ──────────────────────────────────────────────────────────────────────────────
+/research/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Local notes / scratch
+# ──────────────────────────────────────────────────────────────────────────────
+/notes/

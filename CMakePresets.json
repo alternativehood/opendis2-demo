@@ -1,0 +1,127 @@
+{
+    "version": 6,
+    "configurePresets": [
+        {
+            "name": "dev",
+            "displayName": "Development build (vcpkg manifest mode)",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/dev",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "$env{CMAKE_BUILD_TYPE}",
+                "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+                "VCPKG_TARGET_TRIPLET": "$env{VCPKG_DEFAULT_TRIPLET}",
+                "D2_ENABLE_ENGINE": "ON",
+                "D2_USE_FETCHCONTENT_FALLBACK": "OFF",
+                "DISCIPLES2_GAME_ROOT": "$env{DISCIPLES2_GAME_ROOT}",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "dev-no-engine",
+            "displayName": "Development build (no engine/SDL3)",
+            "inherits": "dev",
+            "cacheVariables": {
+                "D2_ENABLE_ENGINE": "OFF",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "windows-mingw-x64",
+            "displayName": "Windows x64 cross-build (MinGW-w64, Linux host only)",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/windows-mingw-x64",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Linux"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+                "CMAKE_SYSTEM_NAME": "Windows",
+                "CMAKE_CXX_COMPILER": "x86_64-w64-mingw32-g++",
+                "CMAKE_RC_COMPILER": "x86_64-w64-mingw32-windres",
+                "VCPKG_TARGET_TRIPLET": "x64-mingw-dynamic",
+                "VCPKG_HOST_TRIPLET": "x64-linux",
+                "VCPKG_INSTALLED_DIR": "$env{VCPKG_INSTALLED_DIR}",
+                "VCPKG_APPLOCAL_DEPS": "OFF",
+                "D2_ENABLE_ENGINE": "ON",
+                "D2_USE_FETCHCONTENT_FALLBACK": "OFF",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "dev",
+            "configurePreset": "dev"
+        },
+        {
+            "name": "windows-mingw-x64",
+            "configurePreset": "windows-mingw-x64",
+            "targets": [
+                "opendis2"
+            ]
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "dev",
+            "configurePreset": "dev",
+            "displayName": "All tests (unit + integration, parallel)",
+            "output": {
+                "outputOnFailure": true
+            },
+            "execution": {
+                "noTestsAction": "error",
+                "jobs": 8
+            }
+        },
+        {
+            "name": "dev-unit",
+            "configurePreset": "dev",
+            "displayName": "Unit tests only (excludes integration, parallel)",
+            "output": {
+                "outputOnFailure": true
+            },
+            "execution": {
+                "noTestsAction": "error",
+                "jobs": 8
+            },
+            "filter": {
+                "exclude": {
+                    "label": "^integration$"
+                }
+            }
+        },
+        {
+            "name": "dev-integration",
+            "configurePreset": "dev",
+            "displayName": "Integration tests (requires DISCIPLES2_GAME_ROOT + game data, parallel)",
+            "output": {
+                "outputOnFailure": true
+            },
+            "execution": {
+                "noTestsAction": "error",
+                "jobs": 4
+            },
+            "filter": {
+                "include": {
+                    "label": "^integration$"
+                }
+            }
+        },
+        {
+            "name": "dev-serial",
+            "configurePreset": "dev",
+            "displayName": "All tests serial (for debugging)",
+            "output": {
+                "outputOnFailure": true
+            },
+            "execution": {
+                "noTestsAction": "error",
+                "jobs": 1
+            }
+        }
+    ]
+}

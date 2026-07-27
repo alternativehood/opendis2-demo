@@ -1,0 +1,9 @@
+# clangd 22 disables these clang-tidy checks internally.
+# Source: clang-tools-extra/clangd/TidyProvider.cpp disableUnusableChecks().
+misc-include-cleaner
+llvm-header-guard
+modernize-macro-to-enum
+cppcoreguidelines-macro-to-enum
+bugprone-use-after-move
+hicpp-invalid-access-moved
+bugprone-unchecked-optional-access

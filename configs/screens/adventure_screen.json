@@ -1,0 +1,12 @@
+{
+    "render_tree": {
+        "/adventure": {
+            "kind": "screen_root",
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "level": 0
+        }
+    }
+}

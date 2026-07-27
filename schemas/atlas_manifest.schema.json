@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AtlasManifest",
+  "description": "Schema for atlas sidecar JSON — structural validation. Semantic checks (sheet file exists, rectangle bounds) stay in C++.",
+  "type": "object",
+  "properties": {
+    "source_container": { "type": "string" },
+    "max_sheet_size": { "type": "integer", "minimum": 1 },
+    "sheet_count": { "type": "integer", "minimum": 0 },
+    "total_sprites": { "type": "integer", "minimum": 0 },
+    "skipped_sprites": { "type": "integer", "minimum": 0 },
+    "skipped": { "type": "array", "items": { "type": "string" } },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "sheet": { "type": "integer", "minimum": 0 },
+          "x": { "type": "integer", "minimum": 0 },
+          "y": { "type": "integer", "minimum": 0 },
+          "w": { "type": "integer", "minimum": 1 },
+          "h": { "type": "integer", "minimum": 1 }
+        },
+        "required": ["name", "sheet", "x", "y", "w", "h"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["max_sheet_size", "sheet_count", "total_sprites", "skipped_sprites", "entries"],
+  "additionalProperties": false
+}
