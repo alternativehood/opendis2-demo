@@ -86,7 +86,7 @@ See [`LEGAL.md`](LEGAL.md) for the distribution terms that apply to this fixture
 Example:
 
 ```bash
-opendis2 adventure --scenario "$DISCIPLES2_GAME_ROOT/Exports/test_all_terrain_with_bulgaria_half_map.sg" --game-root "$DISCIPLES2_GAME_ROOT"
+opendis2 adventure --scenario testdata/test_map.sg --game-root "$DISCIPLES2_GAME_ROOT"
 ```
 
 ## Requirements
