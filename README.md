@@ -21,6 +21,16 @@ OpenDis2 is an independent open-source engine prototype. It is not affiliated wi
 - Native development build support.
 - Windows x64 Docker cross-build support is experimental and unverified in this snapshot.
 
+## Adventure
+
+OpenDis2 currently demonstrates the adventure layer as a playable prototype surface rather than a complete game loop.
+
+- SG scenario parsing and runtime world construction.
+- Adventure terrain rendering, including water, forests, mountains, roads, cities, capitals, ruins, sites, landmarks, treasures, crystals, mines, and other implemented map objects.
+- Adventure stacks, unit presentation, banners, selection, cursors, overlays, and `StackInfo`.
+- Adventure animation and movement prototypes.
+- The authored `testdata/test_map.sg` demo scenario can drive the adventure renderer.
+
 ## Known limitations
 
 - This is not a complete game.
@@ -40,13 +50,13 @@ The project produces these executables:
 | Binary | Description |
 |---|---|
 | `opendis2` | Production entry point (`--help`, `--version`, `battle-viewer`) |
+| `opendis2 battle-viewer` | SDL3 battle viewer via production binary (requires engine) |
 
 ### Development binaries (`opendis2-dev-*`)
 
 | Binary | Description |
 |---|---|
 | `opendis2-dev-extractor` | Main extractor CLI |
-| `opendis2 battle-viewer`      | SDL3 battle viewer via production binary (requires engine) |
 | `opendis2-dev-scenario-gen` | Battle scenario generator |
 | `opendis2-dev-tests` | Unit + integration tests (fast) |
 | `opendis2-dev-integration-tests` | Full-game extraction tests (opt-in via `make test-integration`) |
