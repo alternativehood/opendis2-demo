@@ -65,7 +65,7 @@ is_allowed_env_file() {
 
 is_allowed_image_file() {
     case "$1" in
-        docs/formats/*|tests/fixtures/synthetic/*|assets/app/icon.png)
+        docs/formats/*|docs/screenshots/*|tests/fixtures/synthetic/*|assets/app/icon.png)
             return 0
             ;;
         *)

@@ -299,6 +299,7 @@ data/extracted/
 !docs/formats/*.png
 !docs/formats/*.jpg
 !docs/formats/*.gif
+!docs/screenshots/*.png
 !tests/fixtures/synthetic/
 
 # Allow application-level icon assets (tracked in git, not extracted from game)

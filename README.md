@@ -31,6 +31,14 @@ OpenDis2 currently demonstrates the adventure layer as a playable prototype surf
 - Adventure animation and movement prototypes.
 - The authored `testdata/test_map.sg` demo scenario can drive the adventure renderer.
 
+## Screenshots
+
+![Adventure map screenshot](docs/screenshots/screenshot_1.png)
+
+![Adventure hero sheet screenshot](docs/screenshots/screenshot_2.png)
+
+![Battle prototype screenshot](docs/screenshots/screenshot_3.png)
+
 ## Known limitations
 
 - This is not a complete game.
