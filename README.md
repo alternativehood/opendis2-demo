@@ -59,6 +59,7 @@ The project produces these executables:
 |---|---|
 | `opendis2` | Production entry point (`--help`, `--version`, `battle-viewer`) |
 | `opendis2 battle-viewer` | SDL3 battle viewer via production binary (requires engine) |
+| `opendis2 adventure` | Adventure mode entry point (`--scenario`, `--game-root`, `--headless`) |
 
 ### Development binaries (`opendis2-dev-*`)
 
@@ -81,6 +82,12 @@ the architecture of the production binary.
 `testdata/test_map.sg` is an original scenario authored for this repository. It is used by integration tests and can demonstrate the adventure renderer. It does not contain the original game's assets. It requires the user's local installation of Disciples II: Rise of the Elves.
 
 See [`LEGAL.md`](LEGAL.md) for the distribution terms that apply to this fixture.
+
+Example:
+
+```bash
+opendis2 adventure --scenario "$DISCIPLES2_GAME_ROOT/Exports/test_all_terrain_with_bulgaria_half_map.sg" --game-root "$DISCIPLES2_GAME_ROOT"
+```
 
 ## Requirements
 
