@@ -1,5 +1,7 @@
 # OpenDis2
 
+** ATTENTION - THIS REPO IS NOT RELATED AT ALL TO ANY DISCIPLES II REMAKE AND NEVENDAAR LABS! THIS IS A JUST A DEMO.**
+
 > **Status: frozen proof-of-concept**
 >
 > OpenDis2 is a technical demonstration of a portable Disciples II engine prototype. This repository is published as a source-code, architecture, tooling, and reverse-engineering reference. It is not under active development and has no release roadmap or maintenance commitment.
